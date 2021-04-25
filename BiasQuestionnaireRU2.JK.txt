@@ -1,0 +1,123 @@
+{
+	"resourceType": "Questionnaire",
+	"id": "6b14e731-cc5d-4c25-bd69-4df8add20bc9",
+	"status": "published",
+	"date": "2021-04-20T00:44:04.303Z",
+	"group": {
+		"linkId": "123456",
+		"title": "Bias Tracking Questionaire",
+		"extension": [
+			{
+				"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+				"valueString": "Please review the questions below and answer them to your ability."
+			},
+			{
+				"url": "http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-groupLayout",
+				"valueString": "TABLE"
+			}
+		],
+		"group": [
+			{
+				"linkId": "66a07a39-9957-468c-835d-d8279514f15e",
+				"title": "Bias Questionaire",
+				"repeats": false,
+				"extension": [
+					{
+						"url": "http://standards.healthconnex.com.au/fhir/StructureDefinition/Questionnaire-hcx-horizontal",
+						"valueBoolean": true
+					}
+				],
+				"question": [
+					{
+						"linkId": "0d4ef404-2082-439b-b87a-53ca2c657be8",
+						"text": "Patient Last Name ",
+						"type": "text"
+					},
+					{
+						"linkId": "bb549d0b-e6bd-4772-87b7-b23defecaa57",
+						"text": " Patient First Name",
+						"type": "text",
+						"extension": [
+							{
+								"url": "http://connectingcare.com/fhir/consumer-givenname",
+								"valueBoolean": true
+							}
+						]
+					},
+					{
+						"linkId": "4bcddd45-2935-4a82-9982-ba1bd75bfb31",
+						"text": "Patient Race",
+						"type": "text",
+						"required": true
+					},
+					{
+						"linkId": "c2188195-37d1-4483-8568-d8559c7ed9c7",
+						"text": "Patient Age",
+						"type": "text",
+						"required": true
+					},
+					{
+						"linkId": "34c88195-37d1-4b85-8568-d8559c7ed9c7",
+						"text": "Physician Name",
+						"type": "text",
+						"required": true
+					},
+					{
+						"linkId": "34c88195-37d1-4b85-8568-d8559c7ed9c7",
+						"text": "Hospital/Clinic Name",
+						"type": "text",
+						"required": true
+					},
+					{
+						"linkId": "34c88195-37d1-4b85-8568-d8559c7ed9c7",
+						"text": "Date of Encounter",
+						"type": "date",
+						"required": true
+					},
+					{
+						"linkId": "24c40450-849b-4b02-87d5-2cd061667567",
+						"text": "Rate your treatment today. Enter 1 for good 2 for bad ?",
+						"type": "string",
+						"required": true
+					},
+					{
+						"linkId": "1ad940cd-59a6-4320-be74-829558697cfc",
+						"text": "Do you feel that you healthcare problems were resolved",
+						"type": "string",
+						"required": true,
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+								"valueString": "Answer yes or no"
+							}
+						]
+					},
+					{
+						"linkId": "e111c64a-7ca9-4b75-98e7-befed0130fe5",
+						"text": "Did you perceive any bias from the Physician who treated you ?",
+						"type": "string",
+						"required": true,
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+								"valueString": "Answer Yes or NO"
+							}
+						]
+					},
+					{
+						"linkId": "fdbbba74-b3dc-43fb-a581-4a7232792ef2",
+						"text": "Why do you feel you were discriminated against ?",
+						"type": "string",
+						"required": true,
+						"extension": [
+							{
+								"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+								"valueString": "Answer 1 for Race\nAnswer 2 for Age \nAnswer 3 for Gender \nAnswer 4 for Sexual Orientation\n  "
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
